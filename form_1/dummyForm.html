@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Formulario</title>
+</head>
+<body>
+    <div class="container">
+            <form>
+                <!-- Heading -->
+                <h2 class="trans">Formulario</h2><br>
+
+                <!-- Nombre -->
+                <br><label forname="fname">Nombre:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+
+                <!-- Apellido -->
+                <label forname="lname">Apellido:</label>
+                <input type="text" id="lname" name="lname"><br>
+
+                <!-- Sexo -->
+                <br><label forname="sexo">Sexo:</label>
+                <input type="radio" id="hombre" name="hombre">
+                <label forname="hombre">Hombre</label>
+                <input type="radio" id="Mujer" name="Mujer">
+                <label forname="Mujer">Mujer</label><br>
+                
+                <!-- Email -->
+                <br><label forname="lname">Email:</label>
+                <input type="text" id="lname" name="lname"><br>
+
+                <!-- Poblacion -->
+                <br><label forname="poblacion">Poblacion:</label>
+                <select name="ciudades" id="listado">
+                    <option value="1">Capital</option>
+                    <option value="1">Salta</option>
+                    <option value="1">Misiones</option>
+                    <option value="1">BuenosAires</option>
+                    <option value="1">Cordoba</option>
+                </select><br>
+
+                <!-- Descripcion TextArea -->
+                <br><label forname="lname">Descripcion:</label>
+                <textarea class="textBox" id="messagereview" name="messagereview" rows="2" cols="15"></textarea><br>
+
+                <!-- CheckBox 1 de Ofertas -->
+                <br><label><input type="checkbox" placeholder="info" required>Deseo Recibir Informacion sobre novedades y ofertas</label><br>
+
+                <!-- CheckBox 2 de Condiciones -->
+                <br><label><input type="checkbox" placeholder="agreement" required>Declero haber leido y aceptar las condiciones generales del programa y la normativa sobre proteccion de datos</label><br>
+
+                <br><button type="Enviar" class="btn">Enviar </button>
+            </form>    
+    </div>
+
+</body>
+</html>
+
+
+

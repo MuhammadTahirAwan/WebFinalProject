@@ -5,35 +5,78 @@
 	padding: 0 ;
 }
 
+.container-fluid{
+
+    align-items: center;
+}
+
 .container{
 
 	height: 100vh; 
 	width: 100%;
-	background-image: url(../images/Font.png);
-	background-position: center;
-	background-size: cover;
-	padding-left: 5%;
-	padding-right: 5%;
+/*	background-image: url(../images/Font.png);*/
+	/*background-position: center;
+	background-size: cover;*/
+	/*padding-left: 5%;
+	padding-right: 5%;*/
 	box-sizing: border-box;
 	position: relative;
+	padding: 0;
 }
 
-.navbar{
-
-	width: 100%;
-	height: 15vh;
-	margin: auto;
-	display: flex;
-	align-items: center;
+.selector-for-some-widget {
+  box-sizing: content-box;
 }
 
 
+.display-4{
+
+    font-family: 'Pavelt';
+    font-size: 60px;
+    /*background: -webkit-linear-gradient(360deg, #FF8B00, #2928E1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent*/
+    color: white;
+}
+
+
+.navbar-default {
+    background: rgba(39, 39, 39, 0.1) !important;
+/*  background-color: red !important;*/
+  background-image: none;
+}
 
 
 
 
+.navbar-custom{
+    background: rgba(39, 39, 39, 0.1);
+    backdrop-filter: blur(60px);
+    -webkit-backdrop-filter: blur(60px);
+    
+}
 
 
+
+
+.section {
+    height: calc(100vh + 15vh); /* Adjust height to fit below navbar */
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+#section1 {
+    background-image: url('images/Font.jpg'); /* Replace with your image */
+}
+
+#section2 {
+    background-image: url('images/packaging.jpg'); /* Replace with your image */
+}
 
 
 
@@ -60,14 +103,17 @@ li {
 }
 
 li a {
+
+  float: left;
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-family: 'Pavelt';
-  src: url('fonts/Pavelt.ttf') format('truetype');
+  src: url('../fonts/Pavelt.ttf') format('truetype');
 
+/*	src: url('fonts/Pavelt.ttf') format('truetype');*/
 /*  font-family: Pavelt, Arial-Rounded;*/
 }
 
@@ -79,9 +125,15 @@ li a {
 
 }*/
 
+@font-face {
+    font-family: 'Pavelt';
+    src: url('../fonts/Pavelt.ttf') format('truetype');
+}
+
 ul:hover{
 
 	box-shadow: 0 0 30px #FF8B00;
+    
 	
 
 }
@@ -89,5 +141,6 @@ ul:hover{
 li a:hover {
 
 	color: #FF8B00;
+
 }
 
